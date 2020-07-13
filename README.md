@@ -18,8 +18,24 @@ This web application project aims to conduct an intelligent health care system, 
 * Flask-wtf --0.14.3</br>
 * pymysql --0.9.3</br>
 * email-validator --1.1.1</br></br>
-## Computer Vision Part - Package information
+## Computer Vision Part [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 * Tensorflow --1.15.0</br>
 * Keras --2.3.1</br>
 * OpenCV --4.2.0.32</br>
 * Numpy --1.18.2
+
+### CheckList
+* ✅ Emotion Detection  
+* ✅ Facial recognition 
+* ✅ Face Detection     
+* ✅ Check for Fall -- can be improved 
+
+### Todos
+
+ - Analyzes whether someone breaks into the prohibited area
+ 
+ 
+License
+----
+
+MIT
