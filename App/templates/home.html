@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3>Patient Care Report</h3></br>
+    {% for c_post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <h2><a class="article-title" href="{{ url_for('c_post', c_post_id=c_post.id) }}">{{ c_post.title }}</a></h2>
+            </div>
+              <a class="mr-2" style="color: blue">{{ c_post.worker.username }}</a>
+              <small class="text-muted">{{ c_post.date_posted.strftime('%Y-%m-%d') }}</small>
+            <p class="article-content" style="font-size:large"><br>{{ c_post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "admin.html" %}
+{% block content %}
+    <div class="content-section">
+        <legend class="mb-4">Staff List</legend>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for w_list in worker %}
+                <tr>
+                    <td>{{ w_list.username }}</td>
+                    <td>{{ w_list.email }}</td>
+                    <td>
+                        <form action="{{ url_for('worker_delete',id=w_list.id) }}" method="POST">
+                            <input class="btn btn-outline-danger" type="submit" value="Delete">
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
