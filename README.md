@@ -1,6 +1,9 @@
 # Intelligent-Care-System
 This web application project aims to conduct an intelligent health care system, which will be able to capture and store the images/videos of target individual, recognize target's identity, and analyze the emotion and behaviors through the captured info.</br>
-
+https://github.com/par3k/Face-Emotion-Detector 응용프로그램을 파이썬 웹 프레임워크인 플라스크와 함께 사용하여</br>
+온라인 환자 케어 시스템을 구현하였습니다. </br>
+홈페이지는 간호 조무사와 홈페이지 관리자가 주된 유저이며 환자의 진단후 글을 작성하면 메인 페이지에 모든 간호원들이 확인 가능합니다.</br>
+간호원들은 환자의 데이터를 관리하고, 홈페이지 관리자는 간호원들의 데이터 및 시스템의 공지사항을 관리 합니다.
 
 # Development Information
 * Python --3.7, Pycharm, Spyder</br>
