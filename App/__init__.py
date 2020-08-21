@@ -6,8 +6,8 @@ import pymysql
 pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '5f4c440a3601b408df6ccf7d'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://dbgroup:DBgroup2019.@175.24.44.2/SummerSession'
+app.config['SECRET_KEY'] = 'your secret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://your mysql addr'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['CSRF_ENABLED'] = True
